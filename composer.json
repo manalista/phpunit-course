@@ -1,0 +1,32 @@
+{
+    "name": "andreustimm/phpunit-examples",
+    "description": "Examples on using PHPUnit",
+    "type": "project",
+    "require": {
+        "phormium/phormium": "~0.8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.4",
+        "mockery/mockery": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "AndreusTimm\\PHPUnit\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AndreusTimm\\PHPUnit\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/phpunit/phpunit/phpunit"
+    },
+    "license": "Apache License 2.0",
+    "authors": [
+        {
+            "name": "Andreus Timm",
+            "email": "andreus.timm@gmail.com"
+        }
+    ]
+}
