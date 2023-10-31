@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `persons`;
 CREATE TABLE `persons` (
 	`id` int NOT NULL,
-	`name` varchar(100),
-	`email` varchar(100),
+	`name` varchar(128),
+	`email` varchar(128),
 	PRIMARY KEY (`id`)
 );

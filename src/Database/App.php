@@ -23,8 +23,6 @@ class App
             ];
         }
 
-        print_r($config);
-
         $this->config = $config;
 
         list($dsn, $user, $pass) = $this->config;
@@ -42,7 +40,8 @@ class App
 
     private function setConfigEnvFile(string $envFile = null)
     {
-        $envs = parse_ini_file(__DIR__ . '/../Config/.env');
+        $file = $envFile ?? __DIR__ . '/../Config/.env';
+        $envs = parse_ini_file($file);
 
         foreach ($envs as $key => $value) {
             $_ENV[$key] = $value;
