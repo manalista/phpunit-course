@@ -21,7 +21,7 @@ cp src/Config/.env.example src/Config/.env
 Import files to MySQL
 
 ```
-source tests/assets/01-setup-db.sql 
+source tests/assets/01-setup-db.sql
 source tests/assets/02-create.sql
 source tests/assets/03-data.sql
 ```
@@ -31,4 +31,5 @@ source tests/assets/03-data.sql
 ```
 vendor/bin/phpunit --bootstrap ./tests/bootstrap.php tests --color
 vendor/bin/phpunit tests --color
+composer test
 ```

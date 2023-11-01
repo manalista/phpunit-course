@@ -11,7 +11,7 @@ class Simple
 		$this->number = $number;
 	}
 
-	public function divide($divisor)
+	public function divide(float|int $divisor)
 	{
 		if (empty($divisor)) {
 			throw new \InvalidArgumentException("Divisor must be a number or > 0");

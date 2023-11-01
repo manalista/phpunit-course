@@ -4,22 +4,22 @@ namespace AndreusTimm\PHPUnit;
 
 class AssertionsDemo
 {
-	public function getNumber()
+	public function getNumber():int
 	{
 		return 5;
 	}
 
-	public function getNull()
+	public function getNull():null
 	{
 		return null;
 	}
 
-	public function getTrue()
+	public function getTrue():bool
 	{
 		return true;
 	}
 
-	public function getFruits()
+	public function getFruits():array
 	{
 		return [
 			'peach' => 'sweet',
@@ -29,7 +29,7 @@ class AssertionsDemo
 		];
 	}
 
-	public function getJsonFruits()
+	public function getJsonFruits():string
 	{
 		return json_encode($this->getFruits());
 	}

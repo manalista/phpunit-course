@@ -19,7 +19,7 @@
         }
     },
     "scripts": {
-        "test": "vendor/phpunit/phpunit/phpunit"
+        "test": "vendor/bin/phpunit tests --color"
     },
     "license": "Apache License 2.0",
     "authors": [
