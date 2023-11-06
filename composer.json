@@ -19,7 +19,9 @@
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit tests --color"
+        "test": "vendor/bin/phpunit --testdox --coverage-html tests/reports/coverage/",
+        "test-unit": "vendor/bin/phpunit --testsuite unit --testdox --coverage-html tests/reports/coverage/",
+        "test-integration": "vendor/bin/phpunit --testsuite integration --testdox --coverage-html tests/reports/coverage/"
     },
     "license": "Apache License 2.0",
     "authors": [
