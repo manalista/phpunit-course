@@ -11,6 +11,16 @@ class Simple
 		$this->number = $number;
 	}
 
+	public function sum(float|int $sum):float
+	{
+    	return $this->number + $sum;
+	}
+
+	public function subtract(float|int $sub):float
+	{
+    	return $this->number - $sub;
+	}
+
 	public function divide(float|int $divisor)
 	{
 		if (empty($divisor)) {
@@ -18,5 +28,10 @@ class Simple
 		}
 
     	return $this->number / $divisor;
+	}
+
+	public function multiply(float|int $multiply):float
+	{
+    	return $this->number * $multiply;
 	}
 }
