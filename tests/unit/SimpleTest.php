@@ -37,4 +37,11 @@ class SimpleTest extends TestCase
 
 		$this->assertEquals(5, $result);
 	}
+
+	public function testDivideByZero()
+	{
+		$simple = new Simple(20);
+		$this->expectException(\InvalidArgumentException::class);
+		$simple->divide(0);
+	}
 }
