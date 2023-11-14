@@ -23,9 +23,9 @@ class AssertionsDemo
 	{
 		return [
 			'peach' => 'sweet',
-			'melon' => 'watery',
 			'apple' => 'sour',
-			'banana' => 'amazing'
+			'melon' => 'watery',
+			'banana' => 'amazing',
 		];
 	}
 

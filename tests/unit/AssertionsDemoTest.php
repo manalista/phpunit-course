@@ -14,6 +14,7 @@ class AssertionsDemoTest extends TestCase
 		$this->assertEquals(5, $assertions->getNumber());
         $this->assertNull($assertions->getNull());
         $this->assertTrue($assertions->getTrue());
+        $this->assertFalse(!$assertions->getTrue());
 
         // Array assertions
         $this->assertArrayHasKey('apple', $assertions->getFruits());
